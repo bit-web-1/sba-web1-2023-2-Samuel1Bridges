@@ -17,8 +17,13 @@
         "Portland"
     ]
 
-    /* WRITE YOUR ANSWERS TO #1 HERE... */
 
+
+    /* WRITE YOUR ANSWERS TO #1 HERE... */
+        my_dogs.push("Domino");
+        my_dogs.splice(1 , 1);
+        my_dogs[0] = "Horatio";
+        console.log(my_dogs);
     /*
         2. Dogs again! See the array of food below...
 
@@ -35,8 +40,11 @@
     let foods = ["chicken", "beef"];
 
     /* WRITE YOUR ANSWERS TO #2 HERE... */
-
-</script>
+    my_dogs[0] = my_dogs[0] + "loves " + foods[0];
+    my_dogs[1] = my_dogs[1] + "loves " + foods[1];
+    my_dogs[2] = my_dogs[2] + "loves " + foods[0];
+    my_dogs[3] = my_dogs[4] + "loves " + foods[1];
+</script> 
 
 <style>
 
@@ -46,11 +54,11 @@
         Fix the code so the paragraph below is red. (1 mark)
     */
     :root{
-        main-colour:red;
+        --main-color:red;
     }
 
     p{
-        color:var(main-colour);
+        color:var(--main-color);
     }
 
 </style>

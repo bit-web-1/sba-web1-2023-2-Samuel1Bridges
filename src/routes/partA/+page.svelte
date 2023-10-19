@@ -24,9 +24,21 @@
     let cards = [];
     
     onMount(() => {
-        
-    })
+        const url = `https://api.magicthegathering.io/v1/cards?pageSize=6&contains=imageUrl`;
+        fetch(`${url}`)
+        .then(res => res.json)
+        .then(data => {
+            imgs = data.results;
+        });
+    });
+
+    console.log(imgs);
 </script>
+
+
+ 
+
+
 
 <style>
     h1, h2{
